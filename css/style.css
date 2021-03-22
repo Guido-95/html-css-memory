@@ -1,9 +1,167 @@
+/* debug */
+
+/* #header{
+    background-color:yellow;
+}
+
+main{
+  background-color: green;  
+}
+
+#uno{
+    background-color: pink;
+}
+#due{
+    background-color: grey;
+
+}
+
+#tre{
+    background-color: lightsalmon;
+}
+
+#footer{
+    height: 100px;
+    background-color: magenta;
+} */
+
+/* /debug */
+
+/* impostazioni reset */
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+/* /impostazioni reset */
 
-#header{
+header{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     text-align: center;
 }
+
+body{
+    font-family: 'Nerko One', cursive;
+    background-color: #add8e6;
+}
+
+main{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    
+}
+
+#blocco_uno,
+#blocco_due,
+#blocco_tre{
+    margin: 10px 0 15px 180px ;
+    height: 225px;
+}
+
+h1{
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    color: white;
+    font-size: 90px;
+
+}
+.div-img{
+    margin-left: 20px;
+    margin-top: 10px ;
+    border-radius: 10px;
+    float: left;
+    background-image: url(../img/pattern.png);
+  
+    background-size: 100% 58%;
+    height: 92%;
+    width: 19%;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 180%;
+    margin: auto; */
+}
+
+.no_background{
+    margin-left: 20px;
+    margin-top: 10px ;
+    border-radius: 10px;
+    float: left;
+    
+    /* background-image: url(../img/pattern.png); */
+    background-color:white ;
+    background-size: 100% 58%;
+    height: 92%;
+    width: 19%;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 180%;
+    margin: auto; */
+}
+
+img{
+    margin-top: 10px;
+    width: 180px;
+    height: 160px;
+    object-fit: contain;
+    visibility: hidden;
+}
+
+.div-img:hover {
+    background-image: none;
+    background-color: white;
+}
+
+.div-img:hover img{
+    visibility: visible;
+    
+}
+
+.div-img:hover h2 {
+    color: #e67919;
+    visibility: visible;
+    
+}
+
+h2{
+    color: #e61986;
+    font-size:27px;
+    visibility: hidden;
+}
+
+
+.div-img_start{
+    margin-left: 20px;
+    margin-top: 10px ;
+   
+    border-radius: 10px;
+    float: left;
+    background-image: url(../img/pattern.png);
+    background-size: 100% 58%;
+    height: 92%;
+    width: 19%;
+
+}
+#immagine_start{
+    visibility: visible;
+}
+#titolo_start{
+    visibility: visible;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  footer{
+      text-align: center;
+  }
+
+  #footer{
+      font-size: 20px;
+  }
