@@ -37,6 +37,7 @@ main{
 
 /* tag generici */
 body {
+    white-space: nowrap;
     font-family: 'Nerko One', cursive;
     background-color: #add8e6;
 }
@@ -68,23 +69,24 @@ h2 {
 
 img {
     margin-top: 10px;
-    width: 180px;
-    height: 160px;
+    width: 70%;
     object-fit: contain;
     visibility: hidden;
 }
 
 footer {
+    margin-top: 20px;
     text-align: center;
     font-size: 20px;
 }
 
 /* id blocchi con tessere */
-#blocco_uno,
+/* #blocco_uno,
 #blocco_due,
 #blocco_tre {
-    margin-bottom: 30px ;
-}
+    margin-bottom: 30px;
+} */
+
 
 /* id immagine e titolo sempre girati */
 #tessera_girata {
@@ -96,28 +98,23 @@ footer {
 
 /* classi */
 
-
 .tessera {
-    margin-left: 20px;
-    margin-top: 10px ;
+    margin: 20px 15px 0px 15px;
     border-radius: 10px;
     float: left;
     background-image: url(../img/pattern.png);
     background-size: 100% 58%;
-    height: 92%;
-    width: 22%;
+    width: calc(25% - 30px);
 }
 
 /* tessera girata */
 .tessera_senza_sfondo {
-    margin-left: 20px;
-    margin-top: 10px ;
+    margin: 20px 15px 0px 15px;
     border-radius: 10px;
     float: left;
     background-color:white ;
     background-size: 100% 58%;
-    height: 92%;
-    width: 22%;
+    width: calc(25% - 30px);
 }
 
 .tessera:hover {
